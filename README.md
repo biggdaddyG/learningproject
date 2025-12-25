@@ -21,6 +21,10 @@ A web-based calculator that helps cyclists understand their bike's gear ratios a
   - Direct purchase links to Amazon
   - Top brands: Shimano, SRAM
 
+- **Fun Sound Effects**: Audible "booyah" celebration when making selections
+  - Uses Web Speech API for realistic voice
+  - Plays automatically on chainring or cassette selection
+
 - **Calculations Provided**:
   - Gear ratio for every chainring/cog combination
   - Distance traveled per pedal stroke in feet

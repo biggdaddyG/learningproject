@@ -114,9 +114,26 @@ const cassetteSelect = document.getElementById('cassette');
 const resultsDiv = document.getElementById('results');
 const productRecommendationsDiv = document.getElementById('product-recommendations');
 
-// Add event listeners
-chainringSelect.addEventListener('change', calculateGears);
-cassetteSelect.addEventListener('change', calculateGears);
+// Sound effect function
+function playBooyah() {
+    // Use Web Speech API for "booyah" sound
+    const utterance = new SpeechSynthesisUtterance('booyah');
+    utterance.rate = 1.2; // Slightly faster for excitement
+    utterance.pitch = 1.2; // Higher pitch for enthusiasm
+    utterance.volume = 0.8;
+    speechSynthesis.speak(utterance);
+}
+
+// Add event listeners with sound effect
+chainringSelect.addEventListener('change', () => {
+    playBooyah();
+    calculateGears();
+});
+
+cassetteSelect.addEventListener('change', () => {
+    playBooyah();
+    calculateGears();
+});
 
 function calculateGears() {
     const chainringValue = chainringSelect.value;
