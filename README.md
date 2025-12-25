@@ -15,6 +15,12 @@ A web-based calculator that helps cyclists understand their bike's gear ratios a
   - 11-25 through 11-34 (11-speed)
   - 11-25 and 11-28 (8-speed)
 
+- **Product Recommendations**: Browse highly-rated chainring and cassette products
+  - Real pricing information
+  - Customer ratings (4.5+ stars)
+  - Direct purchase links to Amazon
+  - Top brands: Shimano, SRAM
+
 - **Calculations Provided**:
   - Gear ratio for every chainring/cog combination
   - Distance traveled per pedal stroke in feet
@@ -33,8 +39,9 @@ A web-based calculator that helps cyclists understand their bike's gear ratios a
 1. Open `index.html` in a web browser
 2. Select a chainring package from the dropdown
 3. Select a cassette package from the dropdown
-4. View the complete gear ratio table with distance per pedal stroke
-5. Check the summary section for key statistics
+4. **NEW**: View recommended products with pricing and purchase links
+5. View the complete gear ratio table with distance per pedal stroke
+6. Check the summary section for key statistics
 
 ## Files
 
