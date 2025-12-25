@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Gear Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Road Bike Gear Calculator</h1>
+
+        <div class="selection-panel">
+            <div class="selector">
+                <label for="chainring">Chainring Package:</label>
+                <select id="chainring">
+                    <option value="">-- Select Chainring --</option>
+                    <option value="50,34">Compact: 50/34</option>
+                    <option value="52,36">Semi-Compact: 52/36</option>
+                    <option value="53,39">Standard: 53/39</option>
+                    <option value="46,30">Sub-Compact: 46/30</option>
+                    <option value="48,32">Gravel: 48/32</option>
+                </select>
+            </div>
+
+            <div class="selector">
+                <label for="cassette">Cassette Package:</label>
+                <select id="cassette">
+                    <option value="">-- Select Cassette --</option>
+                    <option value="11,12,13,14,15,16,17,19,21,23,25">11-25 (11-speed)</option>
+                    <option value="11,12,13,14,15,16,17,19,21,24,28">11-28 (11-speed)</option>
+                    <option value="11,12,13,14,15,17,19,21,24,27,30">11-30 (11-speed)</option>
+                    <option value="11,12,13,14,15,17,19,21,23,26,30">11-30 Alt (11-speed)</option>
+                    <option value="11,12,13,14,16,18,20,22,25,28,32">11-32 (11-speed)</option>
+                    <option value="11,12,13,14,16,18,20,22,25,29,34">11-34 (11-speed)</option>
+                    <option value="11,13,15,17,19,21,23,25">11-25 (8-speed)</option>
+                    <option value="11,13,15,17,19,21,24,28">11-28 (8-speed)</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="results" class="results">
+            <p class="instruction">Please select both a chainring and cassette package to see gear ratios.</p>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
